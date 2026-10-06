@@ -165,11 +165,12 @@ if result:
     st.markdown("### Skills")
     skills = result.get("skills", [])
     if skills:
-        st.write(" · ".join(skills))
+        st.write(" · ".join(str(skill) for skill in skills))
     else:
         st.write("No skills found.")
 
     st.markdown("### Experience")
+    
     experience = result.get("experience", [])
     if experience:
         st.dataframe(experience, hide_index=True)
