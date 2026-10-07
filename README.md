@@ -4,6 +4,12 @@ A Streamlit application that extracts structured candidate information from a te
 
 Built as Lab 4 of the LLMs Internship Program at Tips Hindawi, extending the CV Parser from Lab 3.
 
+<!--
+## Demo
+
+[Watch the demo on LinkedIn](PASTE-POST-LINK-HERE)
+-->
+
 ## Features
 
 - Upload a PDF CV.
@@ -89,6 +95,8 @@ Enter the API URL ending in `/parse` and the `CV_API_TOKEN` in the app sidebar.
 CV_API_URL = "https://YOUR-NGROK-URL/parse"
 CV_API_TOKEN = "YOUR_CV_API_TOKEN"
 ```
+
+`CV_API_TOKEN` is a password you choose yourself. Save the same value in Kaggle Secrets and in the Streamlit app settings. Replace `YOUR-NGROK-URL` with the URL printed by your own notebook.
 
 Do not commit tokens or secrets to GitHub.
 
